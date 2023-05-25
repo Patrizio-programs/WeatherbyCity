@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherbyCity</title>
+    <script src=" https://cdn.jsdelivr.net/npm/dotenv@16.0.3/lib/main.min.js "></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 20px;
+        background: linear-gradient(135deg, #8BC34A, #795548);
+      }
+
+      .container{
+        padding: 10px;
+        width: 60vh;
+      }
+    </style>
+  </head>
+  <body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container card">
+      <h1>WeatherbyCity</h1>
+      <form>
+        <div class="form-group">
+          <label for="cityName">Enter a city name:</label>
+          <input type="text" class="form-control" id="cityName" placeholder="e.g. London">
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </form>
+
+      <div>
+        <p id="error"></p>
+      </div>
+
+      <div id="weather">
+        
+      </div>
+    </div>
+    <script rel="script" src="./scripts/weather.js"></script>
+
+  </body>
+</html>
