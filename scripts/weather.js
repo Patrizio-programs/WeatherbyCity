@@ -2,7 +2,6 @@ const form = document.querySelector("form");
 const cityNameInput = document.querySelector("#cityName");
 const weatherDiv = document.querySelector("#weather");
 const errorDiv = document.querySelector("#error");
-const api = process.env.API_KEY
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -14,7 +13,7 @@ form.addEventListener("submit", (e) => {
   errorDiv.textContent = "";
   weatherDiv.innerHTML = "Loading...";
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api}&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=418b12f34f592cda6e65205b82177a99&units=metric`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Weather data not available. Please try again later.");
