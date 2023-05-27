@@ -3,6 +3,7 @@ const cityNameInput = document.querySelector("#cityName");
 const weatherDiv = document.querySelector("#weather");
 const errorDiv = document.querySelector("#error");
 
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const cityName = cityNameInput.value;
